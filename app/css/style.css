@@ -1,0 +1,185 @@
+html,
+body
+{
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper
+{
+	height: 100%;
+
+	position: relative;
+}
+
+.dropfocus {
+	background: greenyellow;
+}
+
+#mapwrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+/* SLOPE */
+
+#slopevis {
+	display: none;
+}
+body.slopevis #slopevis {
+	display: block;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 250px;
+	height: 100%;
+
+	background: #eee;
+}
+body.slopevis #wrapper {
+	padding-right: 250px;
+}
+
+/* PROFILE */
+#profilegraph {
+	display: none;
+}
+
+body.profilegraph #profilegraph {
+	display: block;
+
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+
+	height: 150px;
+	width: 100%;
+
+	background: #eee;
+}
+
+body.profilegraph #wrapper {
+}
+
+
+#dropalert {
+	width: 60%;
+	
+	position: absolute;
+	top: 35%;
+	left: 20%;
+
+	text-align: center;
+	background: #fff;
+	/* border: 1px solid #808080; */
+
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+.dropfocus #dropalert {
+	background: #f4f4f4;
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+#dropalert #dropalert-wrap {
+	margin: 2em 4em;
+}
+
+/* PROMO */
+
+#promo {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	display: block;
+
+	background: #f0f0f0;
+	color: #666;
+
+	/*
+	border-top: 1px solid #888;
+	border-left: 1px solid #888;
+	*/
+	
+	padding: 0 6px 6px 6px;
+
+	text-decoration:  none;
+	text-align: right;
+	line-height: 1.4em;
+
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.25);
+	box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+
+#promo:hover {
+	background: #fff;
+	color: #000;
+
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+#promo h2,
+#promo h2.alt
+{
+	color: #666;
+	margin: 0;
+	line-height: 1.4em;
+	font-weight: bold;
+	font-size: 180%;
+}
+
+#promo h2 .small
+{
+	opacity: 0.5;
+}
+
+#promo:hover h2.alt
+{
+	color: #000;
+}
+
+#promo p {
+	margin: 0;
+	font-size: 80%;
+	line-height: 1em;
+}
+
+#promo .hireme {
+	text-decoration: underline;
+}
+
+#promo .main-legend {
+    margin-top: 4px;
+}
+
+#promo .main-legend b {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* placeholder */
+.placeholder {
+	/*
+	background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+	*/
+    left: 20%;
+    position: absolute;
+    text-align: center;
+    top: 47%;
+    width: 60%;
+
+	color: #888;
+}
